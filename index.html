@@ -5,45 +5,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Web</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaQuery.css">
 </head>
 
 <body>
-    <nav id="desk-nav">
-        <div class="logo">
-            Rahul Kumar Sinha
-        </div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
+<nav id="desk-nav">
+    <div class="logo">
+        Rahul Kumar Sinha
+    </div>
+    <div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <button class="btn btn-outline-dark ms-3" id="theme-toggle">
+                Dark Mode
+            </button>
+        </ul>
+    </div>
+</nav>
 
-    </nav>
-
-    <nav id="hambugur-nav">
-        <div class="logo">
-            Rahul Kumar Sinha
+<nav id="hambugur-nav">
+    <div class="logo">
+        Rahul Kumar Sinha
+    </div>
+    <div class="hambugur-menu">
+        <div class="hambugur-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-        <div class="hambugur-menu">
-            <div class="hambugur-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-
-            </div>
-            <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-            </div>
+        <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            <button class="btn btn-dark ms-3" id="theme-toggle-mobile">
+                Dark Mode
+            </button>
         </div>
-    </nav>
+    </div>
+</nav>
+
 
     <section id="profile">
         <div class="section__pic-container">
@@ -57,13 +63,14 @@
             <p class="section_text-p2">
                 Full-Sack Developer
             </p>
-            <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/resume3.pdf')">
+            <div class="bttn-container">
+                <button class="bttn bttn-color-2" onclick="window.open('./assets/resume3.pdf')">
                     Resume
                 </button>
 
-                <button class="btn btn-color-1" onclick="location.href='./#contact'">
-                    Contact Info
+
+                <button class="bttn bttn-color-1" onclick="location.href='./#contact'">
+                    Contact
                 </button>
                 <div id="socials-container">
                     <img src="./assets/linkedIn.jpeg" alt="Linked" class="icon"
@@ -85,9 +92,9 @@
 
         <div class="section-container">
             <div class="section__pic-container">
-                <img src="/assets/my Photo.jpg" alt="Profile picture" class="about-pic">
+                <img src="/Portfolio Web/assets/my Photo.jpg" alt="Profile picture" class="about-pic">
             </div>
-            <div class="about-details-container">
+            <div id="div2" class="about-details-container">
                 <div class="about-containers">
                     <div class="details-container">
                         <img src="assets/batch img.webp" alt="Experience icon" class="icon">
@@ -125,12 +132,12 @@
     <section id="experience">
         <p class="section_text-p1">Explore My</p>
         <h1 class="title">Experience</h1>
-        <div class="experience-details-container">
+        <div id="div3" class="experience-details-container">
             <div class="about-containers">
-                <div class="details-container">
-                    <h2 class="experience-sub-title">
+                <div id="div2" class="details-container">
+                    <h3 class="experience-sub-title">
                         Full Stack Developer
-                    </h2>
+                    </h3>
                     <div class="article-container">
                         <article>
                             <img src="assets/tickmark.jpeg" alt="Experience icon" class="icon">
@@ -163,54 +170,59 @@
                         <article>
                             <img src="assets/tickmark.jpeg" alt="Experience icon" class="icon">
                             <div>
-                                <h3>Backend</h3>
+                                <h3>Spring Boot</h3>
                                 <p>Intemediate</p>
                             </div>
                         </article>
                     </div>
                 </div>
+
+
+
                 <div class="details-container">
-                    <h2 class="experience-sub-title">
-                        Full Stack Developer
-                    </h2>
+                    <h3 class="experience-sub-title">
+                        Secure Web Developer
+                    </h3>
                     <div class="article-container">
                         <article>
                             <img src="assets/tickmark.jpeg" alt="Experience icon" class="icon">
                             <div>
                                 <h3>SQL</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="assets/tickmark.jpeg" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>React</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="assets/tickmark.jpeg" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Python</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="assets/tickmark.jpeg" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>BootStrap</h3>
                                 <p>Intemediate</p>
                             </div>
                         </article>
                         <article>
                             <img src="assets/tickmark.jpeg" alt="Experience icon" class="icon">
                             <div>
-                                <h3>NODE JS</h3>
-                                <p>Begineer</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="assets/tickmark.jpeg" alt="Experience icon" class="icon">
-                            <div>
-                                <h3>EXPRESS</h3>
-                                <p>Begineer</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="assets/tickmark.jpeg" alt="Experience icon" class="icon">
-                            <div>
-                                <h3>Tools</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="assets/tickmark.jpeg" alt="Experience icon" class="icon">
-                            <div>
-                                <h3>Vesion control</h3>
+                                <h3>Git & GitHub</h3>
                                 <p>Experienced</p>
                             </div>
                         </article>
                     </div>
                 </div>
+
+
             </div>
         </div>
         <img src="assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'">
@@ -227,30 +239,30 @@
                     <div class="article-container">
                         <img src="assets/project poftfolio.jpg" alt="Project 1" class="project-img">
                     </div>
-                    <h2 class="experience-sub-title project-title">
+                    <h3 class="experience-sub-title project-title mt-3">
                        Portfolio Web
-                    </h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 projcet-btn" onclick="location.href='https://github.com/RahulGit2004/My-Portfolio'">
+                    </h3>
+                    <div class="bttn-container">
+                        <button class="bttn bttn-color-2 projcet-bttn" onclick="location.href='https://github.com/RahulGit2004/My-Portfolio'">
                             GitHub
                         </button>
-                        <button class="btn btn-color-2 projcet-btn" onclick="location.href='https://sage-cendol-cf0ee6.netlify.app/'">
+                        <button class="bttn bttn-color-2 projcet-bttn" onclick="location.href='https://sage-cendol-cf0ee6.netlify.app/'">
                             Live Demo
                         </button>
                     </div>
                 </div>
                 <div class="details-container color-container">
                     <div class="article-container">
-                        <img src="assets/project2.webp" alt="Project 2" class="project-img">
+                        <img src="assets/project 02.png" alt="Project 2" class="project-img">
                     </div>
-                    <h2 class="experience-sub-title project-title">
-                        Project Two
-                    </h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 projcet-btn" onclick="location.href='https://github.com'">
+                    <h3 class="experience-sub-title project-title mt-3">
+                        ToDo Website
+                    </h3>
+                    <div class="bttn-container">
+                        <button class="bttn bttn-color-2 projcet-bttn" onclick="location.href='https://github.com/RahulGit2004/toDo-list'">
                             GitHub
                         </button>
-                        <button class="btn btn-color-2 projcet-btn" onclick="location.href='https://github.com'">
+                        <button class="bttn bttn-color-2 projcet-bttn" onclick="location.href='https://todo-list-bs-tech.netlify.app/'">
                             Live Demo
                         </button>
                     </div>
@@ -259,14 +271,14 @@
                     <div class="article-container">
                         <img src="assets/project3.jpeg" alt="Project 3" class="project-img">
                     </div>
-                    <h2 class="experience-sub-title project-title">
+                    <h3 class="experience-sub-title project-title mt-3">
                         Project Three
-                    </h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 projcet-btn" onclick="location.href='https://github.com'">
+                    </h3>
+                    <div class="bttn-container">
+                        <button class="bttn bttn-color-2 projcet-bttn" onclick="location.href='https://github.com'">
                             GitHub
                         </button>
-                        <button class="btn btn-color-2 projcet-btn" onclick="location.href='https://github.com'">
+                        <button class="bttn bttn-color-2 projcet-bttn" onclick="location.href='https://github.com'">
                             Live Demo
                         </button>
                     </div>
@@ -283,7 +295,7 @@
         <h1 class="title">
             Contact Me
         </h1>
-        <div class="contact-info-upper-container">
+        <div id="contact-div" class="contact-info-upper-container">
             <div class="contact-info-container">
                 <img src="assets/email.jpeg" alt="Email iocn" class="icon contact-icon">
                 <p><a href="mailto:rahulkrs2017@gmail.com">rahulkrs2017@gmail.com</a></p>
@@ -312,7 +324,7 @@
 
 
 
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 

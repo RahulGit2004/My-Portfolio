@@ -81,7 +81,7 @@
 
     .about-containers, 
     .contact-info-upper-container,
-    .btn-container {
+    .bttn-container {
         flex-wrap: wrap;
     }
 
