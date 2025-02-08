@@ -13,6 +13,17 @@ body {
 }
 
 
+/* Dark Mode Functionality */
+
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+  }
+  
+  .dark-mode {
+    --bg-color: #212529;
+    --text-color: #ffffff;
+}
 
 /* Dark Mode styles */
 
@@ -499,17 +510,7 @@ footer p {
     text-align: center;
 }
 
-/* Dark Mode Functionality */
 
-:root {
-    --bg-color: #ffffff;
-    --text-color: #000000;
-  }
-  
-  .dark-mode {
-    --bg-color: #212529;
-    --text-color: #ffffff;
-}
 
 
 
